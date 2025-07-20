@@ -30,7 +30,27 @@ let c = 20;
 let d = a + " bought " + b + " items for $" + c + ".";
 
 console.log(d);
+/*
+I find that the variable names in the first project are far too vague, and they do not 
+follow the best practice naming convention of camelCase. While the code works, it is so
+unclear what purpose each variable serves until the output is printed. Before then, it 
+is very unclear what the purpose of the code or the nature of the message it is displaying.
 
-let name = "Alice";
+I think it is important to avoid using variable names that are too short and that lack 
+description, or cause the code to be confusing or unclear. I think you want to avoid 
+using variable names that do not indicate at least somewhat the purpose of the code. This
+way, other developers who are working on the same project are able to quickly and easily
+understand the purpose and goal of the code, and have a better grasp on what they need 
+to work on or what their goal needs to be with the code. 
+*/
+
+/* Project with updated naming conventions */
+let customerName = "Alice";
 let numApples = 5;
 let priceOfApples = 20;
+let storeName = "Walmart";
+let dayOfWeek = "Thursday";
+let purchaseMessage = customerName + " bought " + numApples + " items for $" + 
+  priceOfApples + " at " + storeName + " on " + dayOfWeek + ".";
+
+console.log(purchaseMessage);
